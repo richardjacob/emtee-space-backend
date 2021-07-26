@@ -1,0 +1,60 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class MessagesTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('messages')->delete();
+
+        DB::table('messages')->insert([
+
+        		['id' => '1','space_id' => '10015','reservation_id' => '1','user_to' => '10004','user_from' => '10002','message' => ' Hi, We just planned to a vacation trip on New York. ','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-14 12:28:43','updated_at' => '2017-08-17 14:28:12'],
+  ['id' => '2','space_id' => '10015','reservation_id' => '1','user_to' => '10002','user_from' => '10004','message' => '','message_type' => '12','read' => '0','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-14 12:30:06','updated_at' => '2017-08-14 12:30:06'],
+  ['id' => '3','space_id' => '10015','reservation_id' => '1','user_to' => '10004','user_from' => '10002','message' => ' ','message_type' => '2','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-14 12:33:07','updated_at' => '2017-08-17 14:28:12'],
+  ['id' => '4','space_id' => '10011','reservation_id' => '2','user_to' => '10003','user_from' => '10002','message' => ' ','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-14 12:35:22','updated_at' => '2017-08-14 12:37:39'],
+  ['id' => '5','space_id' => '10011','reservation_id' => '2','user_to' => '10003','user_from' => '10002','message' => 'Hi Mick, We will visit your place for a jolly trip. Shall I expect some offer price on your room?','message_type' => '5','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-14 12:37:34','updated_at' => '2017-08-14 12:37:39'],
+  ['id' => '6','space_id' => '10011','reservation_id' => '2','user_to' => '10002','user_from' => '10003','message' => '','message_type' => '12','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-14 12:38:59','updated_at' => '2017-08-14 12:39:39'],
+  ['id' => '7','space_id' => '10011','reservation_id' => '2','user_to' => '10002','user_from' => '10003','message' => 'Hi Tony, Welcome! Yes, I will give a special offer for you. ','message_type' => '5','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-14 12:39:11','updated_at' => '2017-08-14 12:39:39'],
+  ['id' => '8','space_id' => '10011','reservation_id' => '2','user_to' => '10002','user_from' => '10003','message' => 'Hi Tony, Welcome! Yes, I will give a special offer for you. ','message_type' => '5','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-14 12:39:11','updated_at' => '2017-08-14 12:39:39'],
+  ['id' => '9','space_id' => '10006','reservation_id' => '3','user_to' => '10002','user_from' => '10003','message' => ' ','message_type' => '2','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 07:13:08','updated_at' => '2017-08-17 07:13:47'],
+  ['id' => '10','space_id' => '10008','reservation_id' => '4','user_to' => '10002','user_from' => '10001','message' => ' Hi Tony','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 12:28:32','updated_at' => '2017-08-17 12:31:24'],
+  ['id' => '11','space_id' => '10015','reservation_id' => '5','user_to' => '10004','user_from' => '10001','message' => ' Hi Test','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 12:29:23','updated_at' => '2017-08-17 13:15:05'],
+  ['id' => '12','space_id' => '10011','reservation_id' => '6','user_to' => '10003','user_from' => '10001','message' => ' Hi Mick','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 12:30:05','updated_at' => '2017-08-17 13:27:17'],
+  ['id' => '13','space_id' => '10008','reservation_id' => '4','user_to' => '10001','user_from' => '10002','message' => '','message_type' => '12','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 12:31:36','updated_at' => '2017-08-17 13:19:05'],
+  ['id' => '14','space_id' => '10003','reservation_id' => '7','user_to' => '10001','user_from' => '10002','message' => ' ','message_type' => '2','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:12:38','updated_at' => '2017-08-17 13:18:54'],
+  ['id' => '15','space_id' => '10013','reservation_id' => '8','user_to' => '10004','user_from' => '10002','message' => ' ','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:13:51','updated_at' => '2017-08-17 13:14:35'],
+  ['id' => '16','space_id' => '10013','reservation_id' => '8','user_to' => '10002','user_from' => '10004','message' => '','message_type' => '12','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:14:44','updated_at' => '2017-08-17 14:28:58'],
+  ['id' => '17','space_id' => '10015','reservation_id' => '5','user_to' => '10001','user_from' => '10004','message' => '','message_type' => '3','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:15:12','updated_at' => '2017-08-17 13:18:40'],
+  ['id' => '18','space_id' => '10008','reservation_id' => '9','user_to' => '10002','user_from' => '10004','message' => ' ','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:16:08','updated_at' => '2017-08-17 14:30:56'],
+  ['id' => '19','space_id' => '10004','reservation_id' => '10','user_to' => '10001','user_from' => '10004','message' => ' ','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:16:37','updated_at' => '2017-08-17 13:18:20'],
+  ['id' => '20','space_id' => '10010','reservation_id' => '11','user_to' => '10003','user_from' => '10004','message' => ' ','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:17:04','updated_at' => '2017-08-17 14:59:30'],
+  ['id' => '21','space_id' => '10007','reservation_id' => '12','user_to' => '10002','user_from' => '10004','message' => ' ','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:17:30','updated_at' => '2017-08-17 14:30:36'],
+  ['id' => '22','space_id' => '10012','reservation_id' => '13','user_to' => '10003','user_from' => '10004','message' => ' ','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:18:03','updated_at' => '2017-08-17 14:59:51'],
+  ['id' => '23','space_id' => '10004','reservation_id' => '10','user_to' => '10004','user_from' => '10001','message' => '','message_type' => '12','read' => '0','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:18:27','updated_at' => '2017-08-17 13:18:27'],
+  ['id' => '24','space_id' => '10008','reservation_id' => '4','user_to' => '10002','user_from' => '10001','message' => ' ','message_type' => '2','read' => '0','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:20:29','updated_at' => '2017-08-17 13:20:29'],
+  ['id' => '25','space_id' => '10012','reservation_id' => '13','user_to' => '10004','user_from' => '10003','message' => '','message_type' => '12','read' => '0','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:21:20','updated_at' => '2017-08-17 13:21:20'],
+  ['id' => '26','space_id' => '10010','reservation_id' => '11','user_to' => '10004','user_from' => '10003','message' => '','message_type' => '12','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:21:40','updated_at' => '2017-08-17 14:23:22'],
+  ['id' => '27','space_id' => '10011','reservation_id' => '6','user_to' => '10001','user_from' => '10003','message' => '','message_type' => '12','read' => '0','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:27:23','updated_at' => '2017-08-17 13:27:23'],
+  ['id' => '28','space_id' => '10011','reservation_id' => '2','user_to' => '10002','user_from' => '10003','message' => '','message_type' => '4','read' => '0','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 13:46:26','updated_at' => '2017-08-17 13:46:26'],
+  ['id' => '29','space_id' => '10010','reservation_id' => '11','user_to' => '10003','user_from' => '10004','message' => ' ','message_type' => '2','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 14:24:30','updated_at' => '2017-08-17 14:59:30'],
+  ['id' => '30','space_id' => '10004','reservation_id' => '10','user_to' => '10001','user_from' => '10004','message' => ' ','message_type' => '2','read' => '0','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 14:25:18','updated_at' => '2017-08-17 14:25:18'],
+  ['id' => '31','space_id' => '10012','reservation_id' => '13','user_to' => '10003','user_from' => '10004','message' => ' ','message_type' => '2','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 14:26:06','updated_at' => '2017-08-17 14:59:51'],
+  ['id' => '32','space_id' => '10013','reservation_id' => '8','user_to' => '10002','user_from' => '10004','message' => '','message_type' => '12','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 14:26:48','updated_at' => '2017-08-17 14:28:58'],
+  ['id' => '33','space_id' => '10013','reservation_id' => '14','user_to' => '10004','user_from' => '10002','message' => ' ','message_type' => '2','read' => '0','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 14:29:47','updated_at' => '2017-08-17 14:29:47'],
+  ['id' => '34','space_id' => '10007','reservation_id' => '12','user_to' => '10004','user_from' => '10002','message' => '','message_type' => '12','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 14:30:44','updated_at' => '2017-08-17 14:31:35'],
+  ['id' => '35','space_id' => '10008','reservation_id' => '9','user_to' => '10004','user_from' => '10002','message' => '','message_type' => '12','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 14:31:05','updated_at' => '2017-08-17 14:31:21'],
+  ['id' => '36','space_id' => '10007','reservation_id' => '12','user_to' => '10002','user_from' => '10004','message' => ' ','message_type' => '2','read' => '0','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 14:32:16','updated_at' => '2017-08-17 14:32:16'],
+  ['id' => '37','space_id' => '10012','reservation_id' => '13','user_to' => '10003','user_from' => '10004','message' => '','message_type' => '10','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-17 14:33:23','updated_at' => '2017-08-17 14:59:51'],
+  ['id' => '38','space_id' => '10005','reservation_id' => '15','user_to' => '10001','user_from' => '10004','message' => ' ','message_type' => '1','read' => '1','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-21 10:18:34','updated_at' => '2017-08-21 10:19:21'],
+  ['id' => '39','space_id' => '10005','reservation_id' => '15','user_to' => '10004','user_from' => '10001','message' => '','message_type' => '12','read' => '0','archive' => '0','star' => '0','special_offer_id' => NULL,'created_at' => '2017-08-21 10:19:29','updated_at' => '2017-08-21 10:19:29']
+        		
+        	]);
+    }
+}
