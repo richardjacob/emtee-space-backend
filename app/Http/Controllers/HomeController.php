@@ -52,7 +52,20 @@ class HomeController extends Controller
 		$data['popular_space_type'] = KindOfSpace::active()->popularOnly()->get();
         $data['our_community_banners'] 	= OurCommunityBanners::select('id','image','link','title','description')->get();
         
-		return view('home.home',$data);
+		//return view('home.home',$data);
+		return view('home.home_three',$data);
+
+	}
+
+	public function develop()
+	{
+		$data['sliders'] = HomePageSlider::activeOnly()->get();
+		$data['popular_activities'] = Activity::activeOnly()->popularOnly()->get();
+		$data['popular_space_type'] = KindOfSpace::active()->popularOnly()->get();
+        $data['our_community_banners'] 	= OurCommunityBanners::select('id','image','link','title','description')->get();
+        
+		//dd($data['popular_activities']);
+		return view('home.home_three',$data);
 	}
 
 	public function phpinfo()

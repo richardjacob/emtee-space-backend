@@ -14,8 +14,12 @@
  * No Authentication required routes
  */
 
+
+
+
 Route::group(['middleware' => ['install', 'locale', 'session_check']], function () {
 	Route::get('/', 'HomeController@index')->name('home_page');
+	Route::get('/develop', 'HomeController@develop')->name('develop');
 	Route::view('profile_settings', 'common.responsive_menu')->name('profile_settings');
 	Route::get('ajax_home', 'HomeController@ajax_home');
 	Route::get('ajax_home_explore', 'HomeController@ajax_home_explore');
@@ -246,3 +250,4 @@ Route::get('update__env--content', 'HomeController@updateEnv');
 
 // Static Page Route
 Route::get('{name}', 'HomeController@static_pages')->middleware(['install', 'locale', 'session_check']);
+

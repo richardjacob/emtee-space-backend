@@ -3,14 +3,15 @@
 		<nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center">
 			<div class="logo d-none d-lg-block">
 				<a class="navbar-brand" href="{{ route('home_page') }}">
-					<img src="{{ Route::currentRouteName() == 'home_page' ? LOGO_URL : SECONDARY_LOGO }}" 
-					
+					<img 
+						src="{{ Route::currentRouteName() == 'home_page' ? LOGO_URL : SECONDARY_LOGO }}" 
 						
-						   height="70" 
-						
-					
-					
-					
+						@if(Route::currentRouteName() != 'home_page')
+							height="70" 
+						@else
+							height="150" width="150" 
+						@endif
+
 					/>
 				</a>
 			</div>
