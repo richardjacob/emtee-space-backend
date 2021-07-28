@@ -512,7 +512,7 @@ class TokenAuthController extends Controller
         return response()->json(compact(
     		'status_code',
     		'success_message',
-    		'apple_service_id',
+    		'apple_service_id'
     	));
     }
 }

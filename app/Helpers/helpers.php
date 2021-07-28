@@ -11,15 +11,17 @@
  * @link        http://trioangle.com
  */
 
-use Illuminate\Support\HtmlString;
 use App\Models\Currency;
 use App\Models\Language;
-use App\Models\SiteSettings;
+use App\Models\SpacePhotos;
 use Illuminate\Support\Arr;
+use App\Models\SiteSettings;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\HtmlString;
+use Jose\Component\Signature\JWSBuilder;
 use Jose\Component\Core\AlgorithmManager;
 use Jose\Component\KeyManagement\JWKFactory;
 use Jose\Component\Signature\Algorithm\ES256;
-use Jose\Component\Signature\JWSBuilder;
 use Jose\Component\Signature\Serializer\CompactSerializer;
 
 /**
@@ -63,6 +65,21 @@ if (!function_exists('siteUrl')) {
         $site_settings_url = @SiteSettings::where('name', 'site_url')->first()->value;
         $url = \App::runningInConsole() ? $site_settings_url : url('/');
         return $url;
+    }
+}
+
+
+/**
+ * Get First Image
+ *
+ * @return String $url Base url
+ */
+if (!function_exists('getFirstHomeImage')) {
+
+    function getFirstHomeImage($space_id)
+    {
+        $photo = SpacePhotos::where('space_id',$space_id)->where('order_id', 1)->first();
+        return $photo->name;
     }
 }
 

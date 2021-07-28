@@ -316,6 +316,58 @@
                     <div class="slick-slider arrow-top full-slide custom-nav equal-height"
                         data-slick-options='{"slidesToShow": 5,"autoplay":false,"dots":false,"arrows":false,"responsive":[{"breakpoint": 2000,"settings": {"slidesToShow": 4}},{"breakpoint": 1500,"settings": {"slidesToShow": 3}},{"breakpoint": 1000,"settings": {"slidesToShow": 2}},{"breakpoint": 770,"settings": {"slidesToShow": 1}}]}'>
                         
+                        @foreach($popular_activities as $row)
+                        <div class="box" data-animate="fadeInUp">
+                            <div class="store card border-0 rounded-0">
+                                <div class="position-relative store-image">
+                                    <a href="{{ URL::to('s?activity_type=1'. $row->id) }}">
+                                        <img  src="images/activities/{{$row->image}}" alt="store 1" class="card-img-top rounded-0">
+                                    </a>
+                                    <div class="image-content position-absolute d-flex align-items-center">
+                                        
+                                        <div class="content-right ml-auto d-flex w-lg show-link">
+                                            <a href="#" class="item viewing"
+                                                data-toggle="tooltip" data-placement="top" title="Quickview"
+                                                data-gtf-mfp="true">
+                                                <svg class="icon icon-expand">
+                                                    <use xlink:href="#icon-expand"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="#" class="item marking" data-toggle="tooltip" data-placement="top"
+                                                title="Bookmark"><i class="fal fa-bookmark"></i></a>
+                                            <a href="#" class="item" data-toggle="tooltip" data-placement="top"
+                                                title="Compare">
+                                                <svg class="icon icon-chart-bars">
+                                                    <use xlink:href="#icon-chart-bars"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pb-0 pt-3">
+                                    <a href="{{ URL::to('s?activity_type=1'. $row->id) }}"
+                                        class="card-title h5 text-dark d-inline-block mb-2"><span
+                                            class="letter-spacing-25">{{$row->name}}</span></a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        @endforeach
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="container container-1720">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all">
+                    <div class="slick-slider arrow-top full-slide custom-nav equal-height"
+                        data-slick-options='{"slidesToShow": 5,"autoplay":false,"dots":false,"arrows":false,"responsive":[{"breakpoint": 2000,"settings": {"slidesToShow": 4}},{"breakpoint": 1500,"settings": {"slidesToShow": 3}},{"breakpoint": 1000,"settings": {"slidesToShow": 2}},{"breakpoint": 770,"settings": {"slidesToShow": 1}}]}'>
+                        
                         @foreach($popular_rooms as $row)
                         <div class="box" data-animate="fadeInUp">
                             <div class="store card border-0 rounded-0">

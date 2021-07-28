@@ -51,7 +51,8 @@ class HomeController extends Controller
 		$data['popular_activities'] = Activity::activeOnly()->popularOnly()->get();
 		$data['popular_space_type'] = KindOfSpace::active()->popularOnly()->get();
         $data['our_community_banners'] 	= OurCommunityBanners::select('id','image','link','title','description')->get();
-        
+		$data['popular_rooms'] = Space::where('status','Listed')->get();
+
 		//return view('home.home',$data);
 		return view('home.home_three',$data);
 
@@ -63,9 +64,9 @@ class HomeController extends Controller
 		$data['popular_activities'] = Activity::activeOnly()->popularOnly()->get();
 		$data['popular_space_type'] = KindOfSpace::active()->popularOnly()->get();
         $data['our_community_banners'] 	= OurCommunityBanners::select('id','image','link','title','description')->get();
-        
-		//dd($data['popular_activities']);
-		return view('home.home_three',$data);
+		$data['popular_rooms'] = Space::where('status','Listed')->get();
+		//	dd($data['popular_rooms']);
+		return view('home.develop',$data);
 	}
 
 	public function phpinfo()
