@@ -17,7 +17,7 @@
                     </p>
                 </div>
                 <div class="form-search form-search-style-02 pb-9" data-animate="fadeInDown">
-                    <form action="{{ url('search_page') }}"  method="get">
+                    <form action="{{ route('search_page') }}"  method="get">
                         <div class="row align-items-end no-gutters">
                             <div
                                 class="col-xl-6 mb-4 mb-xl-0 py-3 px-4 bg-white border-right position-relative rounded-left form-search-item">

@@ -9,7 +9,7 @@
                             <span></span>
                         </div>
                         <a class="navbar-brand navbar-brand-mobile" href="{{ url('/') }}">
-                            <img src="{{ url(SECONDARY_LOGO) }}" alt="TheDir" width="50" height="50">
+                            <img src="{{ url(SECONDARY_LOGO) }}" alt="Emtee Space Logo" width="50" height="50">
                         </a>
                         <a class="mobile-button-search" href="#search-popup" data-gtf-mfp="true"
                             data-mfp-options='{"type":"inline","mainClass":"mfp-move-from-top mfp-align-top search-popup-bg","closeOnBgClick":false,"showCloseBtn":false}'><i
@@ -17,7 +17,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-main-menu">
                         <a class="navbar-brand d-none d-xl-block mr-auto" href="{{ url('/') }}">
-                            <img src="{{ url(SECONDARY_LOGO) }}" alt="TheDir">
+                            <img src="{{ url(SECONDARY_LOGO) }}" alt="Emtee Space Logo">
                         </a>
                         <ul class="navbar-nav">
                            

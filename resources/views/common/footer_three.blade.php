@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-lg-4 mb-6 mb-lg-0">
-                    <div class="mb-8"><img src="{{ url(LOGO_URL) }}" alt="ustore logo" width="250" height="250"></div>
+                    <div class="mb-8"><img src="{{ url(SECONDARY_LOGO) }}" alt="Emtee Space logo" width="150" height="150"></div>
                    
                     <div class="mb-8"><img src="{{ asset('/images/logos/apple.png') }}"  width="150" height="150" alt="apple"> 
                     <img src="{{ asset('/images/logos/google.png') }}"  width="150" height="150" alt="google app store "></div>
@@ -34,6 +34,12 @@
                     <ul class="list-group list-group-flush list-group-borderless">
                         <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                             <a href="{{ url('invite') }}" class="link-hover-secondary-primary">Rewards Credit</a>
+                        </li>
+                        <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
+                            <a href="{{ url('guest_refund') }}" class="link-hover-secondary-primary">Guest Refund</a>
+                        </li>
+                        <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
+                            <a href="{{ url('about_us') }}" class="link-hover-secondary-primary">About Us</a>
                         </li>
                         
                     </ul>
