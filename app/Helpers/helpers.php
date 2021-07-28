@@ -14,6 +14,7 @@
 use App\Models\Currency;
 use App\Models\Language;
 use App\Models\SpacePhotos;
+use App\Models\ActivityPrice;
 use Illuminate\Support\Arr;
 use App\Models\SiteSettings;
 use Illuminate\Support\Facades\DB;
@@ -80,6 +81,21 @@ if (!function_exists('getFirstHomeImage')) {
     {
         $photo = SpacePhotos::where('space_id',$space_id)->where('order_id', 1)->first();
         return $photo->name;
+    }
+}
+
+
+/**
+ * Get First Image
+ *
+ * @return String $url Base url
+ */
+if (!function_exists('getPriceHourly')) {
+
+    function getPriceHourly($space_id)
+    {
+        $photo = ActivityPrice::where('space_id',$space_id)->first();
+        return $photo->hourly;
     }
 }
 

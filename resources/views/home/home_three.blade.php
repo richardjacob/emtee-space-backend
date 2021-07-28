@@ -287,7 +287,7 @@
         <div class="container">
             <div class="mb-7">
                 <h2 class="mb-0">
-                    <span class="font-weight-semibold">Popular Activities</span>
+                    <span class="font-weight-semibold">Most Popular</span>
                     <span class="font-weight-light"></span>
                 </h2>
             </div>
@@ -361,7 +361,7 @@
                                     <ul
                                         class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
                                         <li class="list-inline-item"><span
-                                                class="badge badge-success d-inline-block mr-1">R{{$row->popup_price}}</span><span>
+                                                class="badge badge-success d-inline-block mr-1">R{{getPriceHourly($row->id)}} per hour</span><span>
                                                    </span>
                                         </li>
                                         <li class="list-inline-item separate"></li>
@@ -370,7 +370,7 @@
                                         <li class="list-inline-item separate"></li>
                                         <li class="list-inline-item">
                                             <span class="mr-1">Size</span><span
-                                                class="text-danger font-weight-semibold">{{$row->sq_ft}} {{$row->size_type}} {{$row->user_id}}</span></li>
+                                                class="text-danger font-weight-semibold">{{$row->sq_ft}} sq ft</span></li>
                                         </li>
                                     </ul>
 
@@ -401,11 +401,11 @@
     </section>
 
 
-    <section id="section-02" class="pb-8 feature-destination pt-85">
+    <section id="section-02" class="pb-2 feature-destination pt-55">
         <div class="container">
             <div class="mb-8">
                 <h2 class="mb-0">
-                    <span>Benefits   <br/></span>
+                    <span class="font-weight-semibold">Benefits   <br/></span></h2>
                     <br/>
                     <ul class="font-weight-light">
                         <li> More affordable solution; up to 60%* cheaper than traditional self-storage facilities </li>
@@ -413,7 +413,7 @@
                         <li> Hosts are insured and users are insured </li>
                     </ul>
 
-                </h2>
+                
             </div>
             {{-- <div class="slick-slider arrow-center"
                 data-slick-options='{"slidesToShow": 4, "autoplay":false,"dots":false,"responsive":[{"breakpoint": 992,"settings": {"slidesToShow": 3,"arrows":false,"dots":true,"autoplay":true}},{"breakpoint": 768,"settings": {"slidesToShow": 2,"arrows":false,"dots":true,"autoplay":true}},{"breakpoint": 400,"settings": {"slidesToShow": 1,"arrows":false,"dots":true,"autoplay":true}}]}'>
@@ -443,7 +443,7 @@
 
 
 
-    <section class="home-main-testimonial pt-12 pb-13 d-none" id="section-04">
+    <section class="home-main-testimonial pt-8 pb-13 d-none" id="section-04">
         <div class="container">
             <h2 class="mb-8">
                 <span class="font-weight-semibold">Clients </span>
