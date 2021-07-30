@@ -164,7 +164,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                    <img src="https://img.icons8.com/color/48/000000/list.png"/>
+                                    <img src="https://img.icons8.com/color/50/000000/list.png"/>
                                     <span class="number h1 font-weight-bold">1</span>
                                 </div>
                                 <div class="media-body lh-14">
@@ -181,7 +181,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                    <img src="https://img.icons8.com/color/48/000000/event-accepted.png"/>
+                                    <img src="https://img.icons8.com/color/50/000000/event-accepted.png"/>
                                     <span class="number h1 font-weight-bold">2</span>
                                 </div>
                                 <div class="media-body lh-14">
@@ -198,7 +198,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                   <img src="https://img.icons8.com/fluent/48/000000/get-revenue.png"/>
+                                   <img src="https://img.icons8.com/fluent/50/000000/get-revenue.png"/>
                                     <span class="number h1 font-weight-bold">3</span>
                                 </div>
                                 <div class="media-body lh-14">
@@ -207,7 +207,7 @@
                                     </h5>
                                     <p class="font-size-md text-gray mb-0 text-muted">
                                         We will deposit your monthly earnings into your bank account.
-                                        <a href="{{ url('rooms/new') }}" target="_blank">Become a Storage Host Now</a>
+                                        <a href="{{ url('dashboard') }}" target="_blank">Become a Storage Host Now</a>
                                     </p>
                                 </div>
                             </div>
@@ -287,7 +287,7 @@
         <div class="container">
             <div class="mb-7">
                 <h2 class="mb-0">
-                    <span class="font-weight-semibold">Popular Activities</span>
+                    <span class="font-weight-semibold">Most Popular</span>
                     <span class="font-weight-light"></span>
                 </h2>
             </div>
@@ -310,58 +310,6 @@
             </div>
         </div>
         
-        <div class="container container-1720">
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all">
-                    <div class="slick-slider arrow-top full-slide custom-nav equal-height"
-                        data-slick-options='{"slidesToShow": 5,"autoplay":false,"dots":false,"arrows":false,"responsive":[{"breakpoint": 2000,"settings": {"slidesToShow": 4}},{"breakpoint": 1500,"settings": {"slidesToShow": 3}},{"breakpoint": 1000,"settings": {"slidesToShow": 2}},{"breakpoint": 770,"settings": {"slidesToShow": 1}}]}'>
-                        
-                        @foreach($popular_activities as $row)
-                        <div class="box" data-animate="fadeInUp">
-                            <div class="store card border-0 rounded-0">
-                                <div class="position-relative store-image">
-                                    <a href="{{ URL::to('s?activity_type=1'. $row->id) }}">
-                                        <img  src="images/activities/{{$row->image}}" alt="store 1" class="card-img-top rounded-0">
-                                    </a>
-                                    <div class="image-content position-absolute d-flex align-items-center">
-                                        
-                                        <div class="content-right ml-auto d-flex w-lg show-link">
-                                            <a href="#" class="item viewing"
-                                                data-toggle="tooltip" data-placement="top" title="Quickview"
-                                                data-gtf-mfp="true">
-                                                <svg class="icon icon-expand">
-                                                    <use xlink:href="#icon-expand"></use>
-                                                </svg>
-                                            </a>
-                                            <a href="#" class="item marking" data-toggle="tooltip" data-placement="top"
-                                                title="Bookmark"><i class="fal fa-bookmark"></i></a>
-                                            <a href="#" class="item" data-toggle="tooltip" data-placement="top"
-                                                title="Compare">
-                                                <svg class="icon icon-chart-bars">
-                                                    <use xlink:href="#icon-chart-bars"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body px-0 pb-0 pt-3">
-                                    <a href="{{ URL::to('s?activity_type=1'. $row->id) }}"
-                                        class="card-title h5 text-dark d-inline-block mb-2"><span
-                                            class="letter-spacing-25">{{$row->name}}</span></a>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                        @endforeach
-
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-
         <div class="container container-1720">
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all">
@@ -407,13 +355,13 @@
                                     </div>
                                 </div>
                                 <div class="card-body px-0 pb-0 pt-3">
-                                    <a href="{{ URL::to('s?activity_type=1'. $row->id) }}"
+                                    <a href="{{ URL::to('space/'. $row->id) }}"
                                         class="card-title h5 text-dark d-inline-block mb-2"><span
                                             class="letter-spacing-25">{{$row->name}}</span></a>
                                     <ul
                                         class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
                                         <li class="list-inline-item"><span
-                                                class="badge badge-success d-inline-block mr-1">R{{$row->popup_price}}</span><span>
+                                                class="badge badge-success d-inline-block mr-1">R{{getPriceHourly($row->id)}} per hour</span><span>
                                                    </span>
                                         </li>
                                         <li class="list-inline-item separate"></li>
@@ -422,7 +370,7 @@
                                         <li class="list-inline-item separate"></li>
                                         <li class="list-inline-item">
                                             <span class="mr-1">Size</span><span
-                                                class="text-danger font-weight-semibold">{{$row->sq_ft}} {{$row->size_type}} {{$row->user_id}}</span></li>
+                                                class="text-danger font-weight-semibold">{{$row->sq_ft}} sq ft</span></li>
                                         </li>
                                     </ul>
 
@@ -452,12 +400,110 @@
         
     </section>
 
+    <section>
+        
+    </section>
 
-    <section id="section-02" class="pb-8 feature-destination pt-85">
+
+    <section>
+
+        <div class="container">
+            <div class="mb-7">
+                <h2 class="mb-0">
+                    <span class="font-weight-semibold">Most Popular</span>
+                    <span class="font-weight-light"></span>
+                </h2>
+            </div>
+            <div class="row no-gutters pb-11">
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=6') }}">
+                                <img  src="images/home_section/residential.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Residential</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=7') }}">
+                                <img  src="images/home_section/commercial.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Commercial</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">    
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=8') }}">
+                                <img  src="images/home_section/celebratory.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Residential</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=9') }}">
+                                <img  src="images/home_section/creative.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Creative</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=10') }}">
+                                <img  src="images/home_section/entertainment.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Entertainment </h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
+
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=') }}">
+                                <img  src="images/home_section/other.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Other </h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-bottom "></div>
+
+        </div>
+
+
+    </section>
+
+    
+    <section id="section-02" class="pb-2 feature-destination pt-55 p-4">
         <div class="container">
             <div class="mb-8">
                 <h2 class="mb-0">
-                    <span>Benefits   <br/></span>
+                    <span class="font-weight-semibold">Benefits   <br/></span></h2>
                     <br/>
                     <ul class="font-weight-light">
                         <li> More affordable solution; up to 60%* cheaper than traditional self-storage facilities </li>
@@ -465,7 +511,7 @@
                         <li> Hosts are insured and users are insured </li>
                     </ul>
 
-                </h2>
+                
             </div>
             {{-- <div class="slick-slider arrow-center"
                 data-slick-options='{"slidesToShow": 4, "autoplay":false,"dots":false,"responsive":[{"breakpoint": 992,"settings": {"slidesToShow": 3,"arrows":false,"dots":true,"autoplay":true}},{"breakpoint": 768,"settings": {"slidesToShow": 2,"arrows":false,"dots":true,"autoplay":true}},{"breakpoint": 400,"settings": {"slidesToShow": 1,"arrows":false,"dots":true,"autoplay":true}}]}'>
@@ -495,7 +541,7 @@
 
 
 
-    <section class="home-main-testimonial pt-12 pb-13 d-none" id="section-04">
+    <section class="home-main-testimonial pt-8 pb-13 d-none" id="section-04">
         <div class="container">
             <h2 class="mb-8">
                 <span class="font-weight-semibold">Clients </span>

@@ -164,7 +164,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                    <img src="https://img.icons8.com/color/48/000000/list.png"/>
+                                    <img src="https://img.icons8.com/color/50/000000/list.png"/>
                                     <span class="number h1 font-weight-bold">1</span>
                                 </div>
                                 <div class="media-body lh-14">
@@ -181,7 +181,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                    <img src="https://img.icons8.com/color/48/000000/event-accepted.png"/>
+                                    <img src="https://img.icons8.com/color/50/000000/event-accepted.png"/>
                                     <span class="number h1 font-weight-bold">2</span>
                                 </div>
                                 <div class="media-body lh-14">
@@ -198,7 +198,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                   <img src="https://img.icons8.com/fluent/48/000000/get-revenue.png"/>
+                                   <img src="https://img.icons8.com/fluent/50/000000/get-revenue.png"/>
                                     <span class="number h1 font-weight-bold">3</span>
                                 </div>
                                 <div class="media-body lh-14">
@@ -207,7 +207,7 @@
                                     </h5>
                                     <p class="font-size-md text-gray mb-0 text-muted">
                                         We will deposit your monthly earnings into your bank account.
-                                        <a href="{{ url('rooms/new') }}" target="_blank">Become a Storage Host Now</a>
+                                        <a href="{{ url('dashboard') }}" target="_blank">Become a Storage Host Now</a>
                                     </p>
                                 </div>
                             </div>
@@ -280,6 +280,99 @@
             </div>
 
         </div>
+    </section>
+
+    <section>
+
+        <div class="container">
+            <div class="mb-7">
+                <h2 class="mb-0">
+                    <span class="font-weight-semibold">Popular Catagories</span>
+                    <span class="font-weight-light"></span>
+                </h2>
+            </div>
+            <div class="row no-gutters pb-11">
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=6') }}">
+                                <img  src="images/home_section/residential.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Residential</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=7') }}">
+                                <img  src="images/home_section/commercial.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Commercial</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">    
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=8') }}">
+                                <img  src="images/home_section/celebratory.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Residential</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=9') }}">
+                                <img  src="images/home_section/creative.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Creative</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+   
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=10') }}">
+                                <img  src="images/home_section/entertainment.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Entertainment </h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?activity_type=') }}">
+                                <img  src="images/home_section/other.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h1 class="text-white">Other </h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-bottom "></div>
+
+        </div>
+
+
     </section>
 
     <section id="section-03" class="pb-8 our-directory">
@@ -355,7 +448,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body px-0 pb-0 pt-3">
-                                    <a href="{{ URL::to('s?activity_type=1'. $row->id) }}"
+                                    <a href="{{ URL::to('space/'. $row->id) }}"
                                         class="card-title h5 text-dark d-inline-block mb-2"><span
                                             class="letter-spacing-25">{{$row->name}}</span></a>
                                     <ul
@@ -400,8 +493,10 @@
         
     </section>
 
+  
 
-    <section id="section-02" class="pb-2 feature-destination pt-55">
+    
+    <section id="section-02" class="pb-2 feature-destination pt-55 p-4">
         <div class="container">
             <div class="mb-8">
                 <h2 class="mb-0">

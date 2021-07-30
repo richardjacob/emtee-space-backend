@@ -27782,3 +27782,8 @@ button.mfp-arrow:active {
     background: 0 0;
     border: none
 }
+
+.opacity30 {
+    opacity: 0.3;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+  }
