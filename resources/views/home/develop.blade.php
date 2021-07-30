@@ -282,6 +282,99 @@
         </div>
     </section>
 
+    <section>
+
+        <div class="container p-5">
+            <div class="mb-7">
+                <h2 class="mb-0">
+                    <span class="font-weight-semibold">Popular Catagories</span>
+                    <span class="font-weight-light"></span>
+                </h2>
+            </div>
+            <div class="row no-gutters pb-11">
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4 p-3">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?space_type=20') }}">
+                                <img  src="images/home_section/residential.png"  alt="store 1"  height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h4 class="text-white">Residential</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4 p-3">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?space_type=21') }}">
+                                <img  src="images/home_section/commercial.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h4 class="text-white">Commercial</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4 p-3">    
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?space_type=22') }}">
+                                <img  src="images/home_section/celebratory.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h4 class="text-white">Residential</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4 p-3 ">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?space_type=23') }}">
+                                <img  src="images/home_section/creative.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h4 class="text-white">Creative</h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+   
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4 p-3 ">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?space_type=24') }}">
+                                <img  src="images/home_section/entertainment.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h4 class="text-white">Entertainment </h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4 p-3 ">
+                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
+                        <div class="position-relative store-image">
+                            <a href="{{ URL::to('s?space_type=') }}">
+                                <img  src="images/home_section/other.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
+                                <div class="carousel-caption">
+                                    <h4 class="text-white">Other </h1>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-bottom "></div>
+
+        </div>
+
+
+    </section>
+
     <section id="section-03" class="pb-8 our-directory">
         <br/>         <br/>
         <div class="container">
@@ -400,103 +493,7 @@
         
     </section>
 
-    <section>
-        
-    </section>
-
-
-    <section>
-
-        <div class="container">
-            <div class="mb-7">
-                <h2 class="mb-0">
-                    <span class="font-weight-semibold">Most Popular</span>
-                    <span class="font-weight-light"></span>
-                </h2>
-            </div>
-            <div class="row no-gutters pb-11">
-                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
-                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
-                        <div class="position-relative store-image">
-                            <a href="{{ URL::to('s?activity_type=6') }}">
-                                <img  src="images/home_section/residential.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
-                                <div class="carousel-caption">
-                                    <h1 class="text-white">Residential</h1>
-                                  </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
-                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
-                        <div class="position-relative store-image">
-                            <a href="{{ URL::to('s?activity_type=7') }}">
-                                <img  src="images/home_section/commercial.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
-                                <div class="carousel-caption">
-                                    <h1 class="text-white">Commercial</h1>
-                                  </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">    
-                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
-                        <div class="position-relative store-image">
-                            <a href="{{ URL::to('s?activity_type=8') }}">
-                                <img  src="images/home_section/celebratory.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
-                                <div class="carousel-caption">
-                                    <h1 class="text-white">Residential</h1>
-                                  </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
-                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
-                        <div class="position-relative store-image">
-                            <a href="{{ URL::to('s?activity_type=9') }}">
-                                <img  src="images/home_section/creative.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
-                                <div class="carousel-caption">
-                                    <h1 class="text-white">Creative</h1>
-                                  </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
-                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
-                        <div class="position-relative store-image">
-                            <a href="{{ URL::to('s?activity_type=10') }}">
-                                <img  src="images/home_section/entertainment.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
-                                <div class="carousel-caption">
-                                    <h1 class="text-white">Entertainment </h1>
-                                  </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
-
-                    <div class="media icon-box-style-02 fadeInDown animated" data-animate="fadeInDown">
-                        <div class="position-relative store-image">
-                            <a href="{{ URL::to('s?activity_type=') }}">
-                                <img  src="images/home_section/other.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
-                                <div class="carousel-caption">
-                                    <h1 class="text-white">Other </h1>
-                                  </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="border-bottom "></div>
-
-        </div>
-
-
-    </section>
+  
 
     
     <section id="section-02" class="pb-2 feature-destination pt-55 p-4">
