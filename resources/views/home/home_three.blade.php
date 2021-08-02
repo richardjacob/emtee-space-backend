@@ -10,7 +10,7 @@
                 <div class="heading mb-9">
                     <h1 class="mb-7">
                         <span class="d-block" data-animate="slideInLeft">Discover Local</span>
-                        <span class="font-weight-light d-block" data-animate="fadeInRight">P2P Storage space to let</span>
+                        <span class="font-weight-light d-block" data-animate="fadeInRight">P2P <span id="word">Storage</span> space to let.</span>
                     </h1>
                     <p class="h5 font-weight-normal text-secondary mb-0" data-animate="fadeInDown">
                         Find great places to store: <i style="color:#000">furniture, goods, jet skis, clothing etc from local folk.</i>
@@ -164,7 +164,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                    <img src="https://img.icons8.com/color/50/000000/list.png"/>
+                                    <img src="https://img.icons8.com/dotty/50/000000/list.png"/>
                                     <span class="number h1 font-weight-bold">1</span>
                                 </div>
                                 <div class="media-body lh-14">
@@ -181,7 +181,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                    <img src="https://img.icons8.com/color/50/000000/event-accepted.png"/>
+                                    <img src="https://img.icons8.com/ios/50/000000/event-accepted-tentatively.png"/>
                                     <span class="number h1 font-weight-bold">2</span>
                                 </div>
                                 <div class="media-body lh-14">
@@ -190,7 +190,7 @@
                                     </h5>
                                     <p class="font-size-md text-gray mb-0 text-muted">
                                         Accept a booking request that you are comfortable with. <br/>
-                                         <a href="{{ url('storage_host_guarantee') }}" target="_blank">Learn More</a>
+                                         <a href="{{ url('storage_host_guarantee') }}" class="lear_more" target="_blank">Learn More</a>
                                     </p>
                                 </div>
                             </div>
@@ -198,7 +198,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                   <img src="https://img.icons8.com/fluent/50/000000/get-revenue.png"/>
+                                    <img src="https://img.icons8.com/dotty/50/000000/cash-in-hand.png"/>
                                     <span class="number h1 font-weight-bold">3</span>
                                 </div>
                                 <div class="media-body lh-14">
@@ -207,7 +207,7 @@
                                     </h5>
                                     <p class="font-size-md text-gray mb-0 text-muted">
                                         We will deposit your monthly earnings into your bank account.
-                                        <a href="{{ url('dashboard') }}" target="_blank">Become a Storage Host Now</a>
+                                        <a href="{{ url('dashboard') }}" class="lear_more" target="_blank">Become a Storage Host Now</a>
                                     </p>
                                 </div>
                             </div>
@@ -228,7 +228,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                    <img src="https://img.icons8.com/doodle/48/000000/search--v1.png"/>
+                                    <img src="https://img.icons8.com/ios/50/000000/search--v1.png"/>
                                     <span class="number h1 font-weight-bold">1</span>
                                 </div>
                                 <div class="media-body lh-14">
@@ -236,7 +236,7 @@
                                         Search 
                                     </h5>
                                     <p class="font-size-md text-gray mb-0 text-muted">
-                                       Enter your location, duration and type of space you want. <a href="{{ url('signup_login') }}">Register Now</a>
+                                       Enter your location, duration and type of space you want. <a href="{{ url('signup_login') }}" class="lear_more">Register Now</a>
                                         
                                     </p>
                                 </div>
@@ -245,8 +245,8 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                   <img src="https://img.icons8.com/cute-clipart/48/000000/view-file.png"/>
-                                    <span class="number h1 font-weight-bold">2</span>
+                                    <img src="https://img.icons8.com/ios/50/000000/save-search.png"/>
+ <span class="number h1 font-weight-bold">2</span>
                                 </div>
                                 <div class="media-body lh-14">
                                     <h5 class="mb-3 lh-1">
@@ -261,8 +261,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0 px-0 px-lg-4">
                             <div class="media icon-box-style-02" data-animate="fadeInDown">
                                 <div class="d-flex flex-column align-items-center mr-6">
-                                    <img src="https://img.icons8.com/doodle/48/000000/box--v2.png"/>
-                                    <span class="number h1 font-weight-bold">3</span>
+                                    <img src="https://img.icons8.com/ios/50/000000/box--v2.png"/>                                  <span class="number h1 font-weight-bold">3</span>
                                 </div>
                                 <div class="media-body lh-14">
                                     <h5 class="mb-3 lh-1">

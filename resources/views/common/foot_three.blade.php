@@ -341,7 +341,25 @@
     </div>
 </div>
 
+<script type="text/javascript">
+    $(function(){
+        //your stuff
+
+        // count = 0;
+        // wordsArray = ["Beta", "Gamma", "Delta", "Alpha"];
+        // setInterval(function () {
+        // count++;
+        // $("#word").fadeOut(400, function () {
+        //     $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+        // });
+        // }, 5000);
+
+
+    });
+</script>
+
 <script src="{{ URL::to('vendor/jquery.min.js') }}"></script>
+<script src="{{ URL::to('vendor/common.js') }}"></script>
 <script src="{{ URL::to('vendor/popper/popper.js') }}"></script>
 <script src="{{ URL::to('vendor/bootstrap/js/bootstrap.js') }}"></script>
 <script src="{{ URL::to('vendor/hc-sticky/hc-sticky.js') }}"></script>
