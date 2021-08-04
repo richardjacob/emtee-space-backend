@@ -321,7 +321,7 @@
                             <a href="{{ URL::to('s?space_type=22') }}">
                                 <img  src="images/home_section/celebratory.png"  alt="store 1" height="20"  class="card-img-top rounded-0">
                                 <div class="carousel-caption">
-                                    <h4 class="text-white">Residential</h1>
+                                    <h4 class="text-white">Celebratory</h1>
                                   </div>
                             </a>
                         </div>

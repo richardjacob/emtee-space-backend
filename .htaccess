@@ -5,6 +5,7 @@
 <IfModule mime_module>
   AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
 </IfModule>
+
 RewriteCond %{REQUEST_URI} !^/public/
 RewriteRule ^(.*)$ /public/$1 [L,QSA]
 # php -- END cPanel-generated handler, do not edit

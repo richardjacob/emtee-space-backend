@@ -178,7 +178,7 @@ sup {
 }
 
 a {
-    color: #09c;
+    color: #ff5a5f;
     text-decoration: none;
     background-color: transparent
 }
@@ -23495,6 +23495,23 @@ iframe {
     z-index: 1;
     padding-top: 210px
 }
+
+/* Smartphones (portrait) ----------- */
+/*@media only screen and (max-device-width : 640px) {*/
+/*    .home-main-intro {*/
+     
+/*     background-image: url(images/other/banner1.jpg);*/
+        
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-device-width: 768px) {*/
+/*    .home-main-intro {*/
+     
+/*     background-image: url(images/other/banner1.jpg);*/
+        
+/*    }*/
+/*}*/
 
 .home-main-intro::after {
     content: '';
