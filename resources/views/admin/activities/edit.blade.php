@@ -57,7 +57,7 @@
                   {!! Form::select('activity_type_id', $activity_types, $result->activity_type_id, ['class' => 'form-control', 'id' => 'input_activity_type_id','placeholder' => 'Select', 'required']) !!}
                 </div>
               </div>
-             {{-- <div class="form-group">
+             <div class="form-group">
                 <label for="input_image" class="col-sm-3 control-label"> Image </label>
                 <div class="col-sm-6">
                   {!! Form::File('images', ['class' => 'form-control', 'id' => 'input_image', 'accept' => 'Image/*']) !!}
@@ -66,7 +66,7 @@
                     <img width="250" height="200" src="{{ $result->image_url }}">
                   @endif
                 </div>
-              </div>--}}
+              </div>
             </div>
             
             <div class="multiple_lang_add">

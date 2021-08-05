@@ -54,13 +54,13 @@
                   {!! Form::select('activity_type_id', $activity_types, '', ['class' => 'form-control', 'id' => 'input_activity_id','placeholder' => 'Select', 'required']) !!}
                 </div>
               </div>
-             {{-- <div class="form-group">
+             <div class="form-group">
                 <label for="input_image" class="col-sm-3 control-label"> Image <em class="text-danger">*</em></label>
                 <div class="col-sm-6">
                   {!! Form::File('image', ['class' => 'form-control', 'id' => 'input_image', 'accept' => 'Image/*','required']) !!}
                   <span class="text-danger">{{ $errors->first('image') }}</span>
                 </div>
-              </div>--}}
+              </div>
             </div>
             <div class="multiple_lang_add">
             </div>

@@ -77,14 +77,14 @@ class ActivityController extends Controller
             return $validate_return;
         }
 
-        // $target_dir = '/images/activities';
-        // $upload_result = uploadImage($request->file('image'),$target_dir,'activity_');
-        // if($upload_result['status'] != 'Success') {
-        //     flash_message('danger',$upload_result['status_message']);
-        //     return back();
-        // }
+        $target_dir = '/images/activities';
+        $upload_result = uploadImage($request->file('image'),$target_dir,'activity_');
+        if($upload_result['status'] != 'Success') {
+            flash_message('danger',$upload_result['status_message']);
+            return back();
+        }
 
-        // $file_name = $upload_result['file_name'];
+        $file_name = $upload_result['file_name'];
 
         $activity = new Activity;
         
@@ -93,7 +93,7 @@ class ActivityController extends Controller
                 $activity->name      = $request->name[$i];
                 $activity->status      = $request->status;
                 $activity->activity_type_id      = $request->activity_type_id;
-                // $activity->image     = $file_name;
+                $activity->image     = $file_name;
                 $activity->save();
                 $lastInsertedId = $activity->id;
             }
@@ -157,16 +157,16 @@ class ActivityController extends Controller
             return $validate_return;
         }
 
-        // if($request->file('images')) {
-        //     $target_dir = '/images/activities';
-        //     $upload_result = uploadImage($request->file('images'),$target_dir,'activity_');
-        //     if($upload_result['status'] != 'Success') {
-        //         flash_message('danger',$upload_result['status_message']);
-        //         return back();
-        //     }
+        if($request->file('images')) {
+            $target_dir = '/images/activities';
+            $upload_result = uploadImage($request->file('images'),$target_dir,'activity_');
+            if($upload_result['status'] != 'Success') {
+                flash_message('danger',$upload_result['status_message']);
+                return back();
+            }
 
-        //     $file_name = $upload_result['file_name'];
-        // }
+            $file_name = $upload_result['file_name'];
+        }
 
         //Update Activity
         for($i=0;$i < count($request->lang_code);$i++) {
@@ -175,9 +175,9 @@ class ActivityController extends Controller
                 $activity->name        = $request->name[$i];
                 $activity->status      = $request->status;
                 $activity->activity_type_id      = $request->activity_type_id;
-                // if(isset($file_name)) {
-                //     $activity->image      = $file_name;
-                // }
+                if(isset($file_name)) {
+                    $activity->image      = $file_name;
+                }
                 $activity->save();
             }
             else {

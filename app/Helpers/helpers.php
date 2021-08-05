@@ -406,9 +406,6 @@ if (!function_exists('api_credentials')) {
 }
 
 /**
-
-
-/**
  * Process CURL With POST
  *
  * @param  String $url  Url
